@@ -57,6 +57,16 @@ const App = () => {
     border: 'solid 2px black',
     cursor: "pointer",
   };
+  const btnReset = {
+    fontWeight: "500",
+    background: "orange",
+    fontSize: "20px",
+    padding: ".5em",
+    borderRadius: "5px",
+    width: "100%",
+    border: 'solid 2px black',
+    cursor: "pointer",
+  };
 
   return (
     <>
@@ -100,7 +110,7 @@ const App = () => {
           <button style={btnStyle} onClick={div}>
             Division
           </button>
-          <button style={btnStyle} onClick={reset}>
+          <button style={btnReset} onClick={reset}>
             Reset
           </button>
         </div>
