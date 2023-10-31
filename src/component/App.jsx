@@ -70,25 +70,25 @@ const App = () => {
 
   return (
     <>
-      <div className="justify-center w-[500px] h-auto bg-red-300 p-5 mt-20 rounded-md border-none mx-auto">
+      <div className="justify-center max-w-[500px] h-auto bg-red-300 p-5 mt-20 rounded-md border-none mx-auto">
         {/* display */}
         <div className="output w-full h-auto border-2 bg-black p-2 rounded-md border-none ">
           <p className="text-white right-0 text-3xl text-right ">{result == "" ? "00" : result}</p>
         </div>
 
-        <div className="flex gap-1 w-[450px]mt-5 mx-auto">
-          <div className=" mx-auto mt-3">
+        <div className="flex gap-1 max-w-[450px]mt-5 mx-auto ">
+          <div className=" mx-auto mt-3 ">
             <input
-              className="p-2 w-[225px] h-[45px] rounded-md text-right text-2xl"
+              className="p-2 sm:col-span-1 w-full h-[45px] rounded-md text-right text-2xl"
               type="text"
               value={value1}
               onChange={(e) => setValue1(e.target.value)}
               placeholder="Value1"
             />
           </div>
-          <div className=" mx-auto mt-3">
+          <div className=" mx-auto mt-3 sm:flex-row ">
             <input
-              className="p-2 w-[225px] h-[45px] rounded-md text-right text-2xl"
+              className="p-2 sm:col-span-1 w-full  h-[45px] rounded-md text-right text-2xl"
               type="text"
               value={value2}
               onChange={(e) => setValue2(e.target.value)}
